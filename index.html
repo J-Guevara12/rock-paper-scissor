@@ -3,13 +3,33 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<title>Rock paper Scissors!</title>
 </head>
 
 <body>
-	<h1>Let's play RPC</h1>
-	<p>open the console!</p>
-	<script src='script.js'></script>
+	<div id="content">
+		<h1 id='heading'>Let's play Rock Paper Scissors</h1>
+		<div id="counter">
+			<p id="player-score">0</p>
+			<p id="machine-score">0</p>
+		</div>
+		<div id="selection">
+			<button id="op1" class="option"><img id="img1" class="imgs" src="img/rock.jpg" alt="rock"></button>
+			<button id="op2" class="option"><img id="img2" class="imgs" src="img/paper.jpg" alt="paper"></button>
+			<button id="op3" class="option"><img id="img3" class="imgs" src="img/scissors.jpg" alt="scissors"></button>
+		</div>
+		<div id="results">
+			<img class='imgs-little' src='img/grey.png' id="player-selection"></img>
+			<img id='vs' src="img/vs.png" alt="Vs">
+			<img id="machine-selection" class="imgs-little" src="img/grey.png">
+		</div>
+		<img id="result" class='imgs-little' src="img/grey.png" alt="result">
+		<script src='script.js'></script>
+	</div>
+	<footer>
+		Copyright © 2021 Juan Esteban Guevara
+	</footer>
 </body>
 
 </html>
